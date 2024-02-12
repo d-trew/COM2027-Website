@@ -1,0 +1,20 @@
+<!-- job_matching_app/templates/job_matching_app/job_opportunities.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Opportunities</title>
+</head>
+<body>
+    <h1>Job Opportunities</h1>
+    {% for job in job_opportunities %}
+        <div>
+            <h3>{{ job.title }}</h3>
+            <p>{{ job.description }}</p>
+            <!-- Add other job details -->
+        </div>
+    {% endfor %}
+</body>
+</html>
