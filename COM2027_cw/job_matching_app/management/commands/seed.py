@@ -27,6 +27,7 @@ class Command(BaseCommand):
             student = Student(
                 first_name=fake.first_name(),
                 last_name=fake.last_name(),
+                skills="Python, Django, HTML, CSS",  # Example skills
                 # Add other fields as needed
             )
             students.append(student)
@@ -38,6 +39,7 @@ class Command(BaseCommand):
             job_opportunity = JobOpportunity(
                 title=fake.job(),
                 description=fake.text(),
+                skills_required="JavaScript, React",  # Example skills_required
                 # Add other fields as needed
             )
             job_opportunities.append(job_opportunity)
